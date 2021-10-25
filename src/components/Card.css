@@ -1,10 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 112.5%;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 80px;
+}
+
+body {
+  margin: 0;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+button {
+  margin-left: 15rem;
+}
+
+.cards-container {
+  display: flex;
+  align-content: center;
+  gap: 8rem;
+  padding: 1rem;
+}
+
 .Card {
   display: grid;
   padding: 10px;
-  background-color: black;
-  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 8px 10px #888;
+  width: 250px;
+  height: 400px;
+  background-color: papayawhip;
+}
+
+.image-wrapper {
+  border-color: 2px solid red;
+  height: 150px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: white;
 }
 
 .Card__image {
-  width: 20%;
+  max-height: 90%;
+  max-width: 90%;
+}
+
+h2,
+h3 {
+  margin: auto;
+}
+
+.item-wrapper {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+dl {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+dt {
+  font-size: 12px;
+}
+
+dd {
+  margin-inline-start: 0;
 }
