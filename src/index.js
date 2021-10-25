@@ -1,9 +1,10 @@
 import Card from './components/Card.js'
-import { getBySelector, getByDataJs } from './lib/dom'
+import { getBySelector, getByDataJs, getAllByDataJs } from './lib/dom'
 import { randomNumber } from './lib/math.js'
 import './styles/index.css'
 
 const btn = getByDataJs('btn')
+const btnFight = getByDataJs('btnFight')
 
 btn.addEventListener('click', () => {
   document.querySelectorAll('.Card').forEach(function (a) {
@@ -31,3 +32,10 @@ function renderCard(data) {
   })
   container.append(card)
 }
+
+btnFight.addEventListener('click', () => {
+  const helper1 = getAllByDataJs('level')
+  const levelPok1 = helper1[0].innerHTML
+  const levelPok2 = helper1[1].innerHTML
+  console.log(levelPok1, levelPok2)
+})
