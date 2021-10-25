@@ -31,3 +31,7 @@ h2,
 h3 {
   margin: auto;
 }
+
+.--hidden {
+  display: none;
+}
