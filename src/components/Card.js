@@ -12,7 +12,7 @@ export default function Card({ name, type, weight, height, level, img }) {
       </div>
 
         <h2>${name}</h2>
-        <h3>Level: ${level}</h3>
+        <h3 data-js="level">Level: ${level}</h3>
         <dl>
           <div class="item-wrapper">
             <dt>TYPE</dt>

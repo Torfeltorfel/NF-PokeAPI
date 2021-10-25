@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 *,
 *::before,
 *::after {
@@ -18,4 +20,18 @@ input,
 button,
 textarea {
   font: inherit;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 80px;
+}
+
+h2,
+h3 {
+  margin: auto;
+}
+
+.--hidden {
+  display: none;
 }
